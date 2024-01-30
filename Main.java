@@ -51,10 +51,26 @@ public class Main {
         // }
         // System.out.println(max.size());
 
-        ArrayList<Integer> al = new ArrayList<>(List.of(1,2,0));
-        FirstMissingInteger fmi = new FirstMissingInteger();
-        int ans = fmi.firstMissingPositive(al);
+        // ArrayList<Integer> al = new ArrayList<>(List.of(1, 2, 3, 4, 5, 4, 3, 2, 3, 10));
+        // FirstMissingInteger fmi = new FirstMissingInteger();
+        // int ans = fmi.firstMissingPositive(al);
 
-        System.out.println(ans);;
+        Interval a1 = new Interval(1,2);
+        // Interval a2 = new Interval(3,5);
+        // Interval a3 = new Interval(6,7);
+        // Interval a4 = new Interval(8,10);
+        Interval a5 = new Interval(12,16);
+
+        ArrayList<Interval> al = new ArrayList<>();
+        al.add(a1);
+        // al.add(a2);
+        // al.add(a3);
+        // al.add(a4);
+        al.add(a5);
+
+        Interval newInterval = new Interval(4,9);
+        MergeIntervals mi = new MergeIntervals();
+        ArrayList<Interval> ans = mi.insert(al, newInterval);
+
     }
 }
