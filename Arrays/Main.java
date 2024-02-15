@@ -1,4 +1,4 @@
-package InterviewBit.InterviewBit;
+package InterviewBit.InterviewBit.Arrays;
 
 import java.util.ArrayList;
 
@@ -69,6 +69,6 @@ public class Main {
         Interval newInterval = new Interval(4,9);
         MergeIntervals mi = new MergeIntervals();
         ArrayList<Interval> ans = mi.insert(al, newInterval);
-
+        System.out.println(ans);
     }
 }

@@ -1,4 +1,4 @@
-package InterviewBit.InterviewBit;
+package InterviewBit.InterviewBit.Arrays;
 
 import java.util.ArrayList;
 
@@ -7,8 +7,6 @@ public class MergeIntervals {
         
         ArrayList<Interval> ans = new ArrayList<>();
         int sz = intervals.size();
-        Interval merged = new Interval();
-        boolean flag = false;
         
         for(int i=0;i<sz;i++)
         {

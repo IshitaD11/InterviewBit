@@ -1,4 +1,4 @@
-package InterviewBit.InterviewBit;
+package InterviewBit.InterviewBit.Arrays;
 
 public class Interval {
     int start;
